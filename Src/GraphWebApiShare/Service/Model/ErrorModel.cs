@@ -1,12 +1,14 @@
 ﻿namespace GraphWebApi.Service.Model;
 
-internal class ErrorModel
+internal class ErrorRoot
 {
     [JsonPropertyName("error")]
-    public ErrorItem? Error { get; set; }
+    public ErrorModel? Error { get; set; }
+
+    public override string ToString() => $"{Error?.code} {Error?.Message}";
 }
 
-internal class ErrorItem
+internal class ErrorModel
 {
     [JsonPropertyName("code")]
     public string? code { get; set; }

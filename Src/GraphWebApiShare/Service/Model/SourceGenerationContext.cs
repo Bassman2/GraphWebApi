@@ -1,14 +1,18 @@
 ﻿namespace GraphWebApi.Service.Model;
 
 [JsonSourceGenerationOptions]
-[JsonSerializable(typeof(int))]
-//[JsonSerializable(typeof(ChildModel))]
-//[JsonSerializable(typeof(DirectoryModel))]
-//[JsonSerializable(typeof(FileInfoModel))]
-//[JsonSerializable(typeof(FileListModel))]
-//[JsonSerializable(typeof(FileModel))]
-//[JsonSerializable(typeof(FolderInfoModel))]
-//[JsonSerializable(typeof(MdTimestampsModel))]
+
+[JsonSerializable(typeof(ErrorRoot))]
+[JsonSerializable(typeof(ErrorModel))]
+
+[JsonSerializable(typeof(UserModel))]
+
+[JsonSerializable(typeof(MessageRoot))]
+[JsonSerializable(typeof(MessageModel))]
+[JsonSerializable(typeof(BodyModel))]
+[JsonSerializable(typeof(ToRecipientsModel))]
+[JsonSerializable(typeof(EmailAddressModel))]
+
 //[JsonSerializable(typeof(ProjectModel))]
 //[JsonSerializable(typeof(RepositoryModel))]
 //[JsonSerializable(typeof(List<RepositoryModel>))]

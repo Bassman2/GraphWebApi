@@ -2,16 +2,20 @@
 {
     internal class Program
     {
+
+        
         static void Main(string[] args)
         {
-            string? host = Environment.GetEnvironmentVariable("GRAPH_HOST");
+
             string? apiKey = Environment.GetEnvironmentVariable("GRAPH_APIKEY");
 
             try
             {
-                using var graph = new Graph(new Uri(host!), apiKey!);
+                using var graph = new Graph(apiKey!);
 
                 var user = graph.CurrentUserAsync().Result;
+
+
 
             }
             catch (Exception ex) 

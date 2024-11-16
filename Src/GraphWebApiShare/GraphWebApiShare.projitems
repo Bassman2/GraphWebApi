@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Graph.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\GraphService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ErrorModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MessageModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\SourceGenerationContext.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\UserModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Usings.cs" />
