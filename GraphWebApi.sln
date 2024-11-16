@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphWebApi90", "Src\GraphWebApi90\GraphWebApi90.csproj", "{D48E8962-3F05-4A0F-920B-8160DF37EA8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{BFAF3419-4E69-47D0-B5CA-2BAD41234ACA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphWebApi80", "Src\GraphWebApi80\GraphWebApi80.csproj", "{4C842541-1F04-4008-BF6C-1D39FA1DCB72}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GraphWebApiShare", "Src\GraphWebApiShare\GraphWebApiShare.shproj", "{25C063A6-42D8-4447-84B4-2CA319EBD098}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{C12ACE80-D48E-4940-817D-6C3A34522004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphWebApiDemo", "Demo\GraphWebApiDemo\GraphWebApiDemo.csproj", "{6029532A-2EB6-4C39-BD54-D9B29DAC4B34}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WebServiceClientShare", "..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.shproj", "{8CAACB04-9656-4B7C-A692-422FCA51474B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D48E8962-3F05-4A0F-920B-8160DF37EA8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D48E8962-3F05-4A0F-920B-8160DF37EA8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D48E8962-3F05-4A0F-920B-8160DF37EA8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D48E8962-3F05-4A0F-920B-8160DF37EA8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C842541-1F04-4008-BF6C-1D39FA1DCB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C842541-1F04-4008-BF6C-1D39FA1DCB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C842541-1F04-4008-BF6C-1D39FA1DCB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C842541-1F04-4008-BF6C-1D39FA1DCB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6029532A-2EB6-4C39-BD54-D9B29DAC4B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6029532A-2EB6-4C39-BD54-D9B29DAC4B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6029532A-2EB6-4C39-BD54-D9B29DAC4B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6029532A-2EB6-4C39-BD54-D9B29DAC4B34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D48E8962-3F05-4A0F-920B-8160DF37EA8D} = {BFAF3419-4E69-47D0-B5CA-2BAD41234ACA}
+		{4C842541-1F04-4008-BF6C-1D39FA1DCB72} = {BFAF3419-4E69-47D0-B5CA-2BAD41234ACA}
+		{25C063A6-42D8-4447-84B4-2CA319EBD098} = {BFAF3419-4E69-47D0-B5CA-2BAD41234ACA}
+		{6029532A-2EB6-4C39-BD54-D9B29DAC4B34} = {C12ACE80-D48E-4940-817D-6C3A34522004}
+		{8CAACB04-9656-4B7C-A692-422FCA51474B} = {BFAF3419-4E69-47D0-B5CA-2BAD41234ACA}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Src\GraphWebApiShare\GraphWebApiShare.projitems*{25c063a6-42d8-4447-84b4-2ca319ebd098}*SharedItemsImports = 13
+		Src\GraphWebApiShare\GraphWebApiShare.projitems*{4c842541-1f04-4008-bf6c-1d39fa1dcb72}*SharedItemsImports = 5
+		..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems*{4c842541-1f04-4008-bf6c-1d39fa1dcb72}*SharedItemsImports = 5
+		..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems*{8caacb04-9656-4b7c-a692-422fca51474b}*SharedItemsImports = 13
+		Src\GraphWebApiShare\GraphWebApiShare.projitems*{d48e8962-3f05-4a0f-920b-8160df37ea8d}*SharedItemsImports = 5
+		..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems*{d48e8962-3f05-4a0f-920b-8160df37ea8d}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
