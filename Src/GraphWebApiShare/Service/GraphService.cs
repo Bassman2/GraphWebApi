@@ -45,16 +45,16 @@ internal class GraphService : JsonService
 
 
     // https://learn.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0&tabs=http#code-try-3
-    public IAsyncEnumerable<> GetChatsAsync(CancellationToken cancellationToken)
-    {
-        var res = await GetFromJsonAsync<>("/v1.0/chats", cancellationToken);
-    }
+    //public IAsyncEnumerable<> GetChatsAsync(CancellationToken cancellationToken)
+    //{
+    //    var res = await GetFromJsonAsync<>("/v1.0/chats", cancellationToken);
+    //}
 
     // https://learn.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-1.0&tabs=http
-    public IAsyncEnumerable<MessageModel> GetChatMessagesAsync(string chatId, CancellationToken cancellationToken)
-    {
-        var res = await GetFromJsonAsync<>("/v1.0/chats/{chat-id}/messages", cancellationToken);
-    }
+    //public IAsyncEnumerable<MessageModel> GetChatMessagesAsync(string chatId, CancellationToken cancellationToken)
+    //{
+    //    var res = await GetFromJsonAsync<>("/v1.0/chats/{chat-id}/messages", cancellationToken);
+    //}
 
     // https://learn.microsoft.com/en-us/graph/api/chat-post-messages?view=graph-rest-1.0&tabs=http
     public async Task SendChatMessage(string chatId, string message, CancellationToken cancellationToken)
