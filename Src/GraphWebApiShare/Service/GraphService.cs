@@ -11,7 +11,7 @@ internal class GraphService : JsonService
 
     public GraphService() : base(new Uri("https://graph.microsoft.com"), SourceGenerationContext.Default)
     {
-        string name = "elektrobit.onmicrosoft.com";
+        //string name = "elektrobit.onmicrosoft.com";
     }
 
     #region error handling
