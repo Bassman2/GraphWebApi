@@ -1,6 +1,5 @@
 ﻿namespace GraphWebApi;
 
-
 public sealed class Graph(string apiKey) : IDisposable
 {
     private GraphService? service = new(apiKey);

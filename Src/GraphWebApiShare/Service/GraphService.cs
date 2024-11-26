@@ -16,12 +16,6 @@ internal class GraphService : JsonService
 
     #region error handling
 
-    //protected override void ErrorHandling(HttpResponseMessage response, string memberName)
-    //{
-    //    var error = ReadFromJson<ErrorRoot>(response);
-    //    WebServiceException.ThrowHttpError(error?.ToString(), response, memberName);
-    //}
-
     protected override async Task ErrorHandlingAsync(HttpResponseMessage response, string memberName, CancellationToken cancellationToken)
     {
         var error = await ReadFromJsonAsync<ErrorRoot>(response, cancellationToken);
