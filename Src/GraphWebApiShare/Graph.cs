@@ -1,9 +1,19 @@
 ﻿namespace GraphWebApi;
 
-public sealed class Graph(string apiKey) : IDisposable
+public sealed class Graph : IDisposable
 {
-    private GraphService? service = new(apiKey);
+    private GraphService? service;
 
+    public Graph(string token)
+    {
+        service = new GraphService(token);
+    }
+
+    public Graph(string app, string login, string password)
+    {
+        service = new GraphService(app, login, password);
+    }
+    
     public void Dispose()
     {
         if (this.service != null)
