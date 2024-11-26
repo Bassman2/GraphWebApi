@@ -9,6 +9,7 @@
     <Import_RootNamespace>GraphWebApi</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Authenticator\OAuthAuthenticator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Graph.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\GraphService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ErrorModel.cs" />

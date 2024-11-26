@@ -6,13 +6,19 @@
 
 internal class GraphService : JsonService
 {
-    public GraphService(string apiKey) : base(new Uri("https://graph.microsoft.com"), SourceGenerationContext.Default, new BearerAuthenticator(apiKey))
+    public GraphService(string app, string login, string password)
+        : base(new Uri("https://graph.microsoft.com"), SourceGenerationContext.Default, new OAuthAuthenticator(app, login, password, new Uri("https://login.microsoftonline.com")))
     { }
 
-    public GraphService() : base(new Uri("https://graph.microsoft.com"), SourceGenerationContext.Default)
-    {
-        //string name = "elektrobit.onmicrosoft.com";
-    }
+    public GraphService(string token) 
+        : base(new Uri("https://graph.microsoft.com"), SourceGenerationContext.Default, new BearerAuthenticator(token))
+    { }
+
+    //public GraphService() 
+    //    : base(new Uri("https://graph.microsoft.com"), SourceGenerationContext.Default)
+    //{
+    //    //string name = "elektrobit.onmicrosoft.com";
+    //}
 
     #region error handling
 
