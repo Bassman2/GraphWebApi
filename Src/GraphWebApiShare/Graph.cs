@@ -9,10 +9,10 @@ public sealed class Graph : IDisposable
         service = new GraphService(token);
     }
 
-    public Graph(string app, string login, string password)
-    {
-        service = new GraphService(app, login, password);
-    }
+    //public Graph(string app, string login, string password)
+    //{
+    //    service = new GraphService(app, login, password);
+    //}
     
     public void Dispose()
     {
