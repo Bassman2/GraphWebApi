@@ -14,8 +14,7 @@ internal class GraphService : JsonService
         //string name = "elektrobit.onmicrosoft.com";
     }
 
-    protected override string? AuthenticationTestUrl => null;
-
+    protected override string? AuthenticationTestUrl => "/v1.0/me";
 
     #region error handling
 
