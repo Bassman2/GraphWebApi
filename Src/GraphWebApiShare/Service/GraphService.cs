@@ -4,16 +4,9 @@
 
 // https://developer.microsoft.com/en-us/graph/graph-explorer
 
-internal class GraphService : JsonService
+internal class GraphService(Uri host, IAuthenticator? authenticator, string appName) 
+    : JsonService(host, authenticator, appName, SourceGenerationContext.Default)
 {
-    public GraphService(string apiKey) : base(new Uri("https://graph.microsoft.com"), SourceGenerationContext.Default, new BearerAuthenticator(apiKey))
-    { }
-
-    public GraphService() : base(new Uri("https://graph.microsoft.com"), SourceGenerationContext.Default)
-    {
-        //string name = "elektrobit.onmicrosoft.com";
-    }
-
     protected override string? AuthenticationTestUrl => "/v1.0/me";
 
     #region error handling

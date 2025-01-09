@@ -4,16 +4,15 @@ public sealed class Graph : IDisposable
 {
     private GraphService? service;
 
-    public Graph(string token)
+    public Graph(string storeKey, string appName)
+      : this(new Uri(KeyStore.Key(storeKey)?.Host!), KeyStore.Key(storeKey)!.Token!, appName)
+    { }
+
+    public Graph(Uri host, string token, string appName)
     {
-        service = new GraphService(token);
+        service = new GraphService(host, new BearerAuthenticator(token), appName);
     }
 
-    //public Graph(string app, string login, string password)
-    //{
-    //    service = new GraphService(app, login, password);
-    //}
-    
     public void Dispose()
     {
         if (this.service != null)
