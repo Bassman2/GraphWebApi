@@ -2,16 +2,11 @@
 {
     internal class Program
     {
-
-        
         static void Main(string[] args)
         {
-
-            string? apiKey = Environment.GetEnvironmentVariable("GRAPH_APIKEY");
-
             try
             {
-                using var graph = new Graph(apiKey!);
+                using var graph = new Graph("graph", "GraphWebApiDemo");
 
                 var user = graph.CurrentUserAsync().Result;
 
