@@ -33,7 +33,7 @@ internal class GraphService(Uri host, IAuthenticator? authenticator, string appN
     }
 
 
-    // https://learn.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0&tabs=http#code-try-3
+    // https://learn.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0&tabs=http#Code-try-3
     //public IAsyncEnumerable<> GetChatsAsync(CancellationToken cancellationToken)
     //{
     //    var res = await GetFromJsonAsync<>("/v1.0/chats", cancellationToken);
