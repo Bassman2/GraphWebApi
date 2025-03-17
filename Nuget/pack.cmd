@@ -1,0 +1,1 @@
+nuget pack GraphWebApi.nuspec -properties Configuration=Release
