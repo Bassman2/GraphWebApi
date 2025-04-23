@@ -13,7 +13,11 @@ internal class GraphService(Uri host, IAuthenticator? authenticator, string appN
 
     protected override async Task ErrorHandlingAsync(HttpResponseMessage response, string memberName, CancellationToken cancellationToken)
     {
-        var error = await ReadFromJsonAsync<ErrorRoot>(response, cancellationToken);
+        //var error = await ReadFromJsonAsync<ErrorRoot>(response, cancellationToken);
+
+        JsonTypeInfo<ErrorRoot> jsonTypeInfoOut = (JsonTypeInfo<ErrorRoot>)context.GetTypeInfo(typeof(ErrorRoot))!;
+        var error = await response.Content.ReadFromJsonAsync<ErrorRoot>(jsonTypeInfoOut, cancellationToken);
+
         WebServiceException.ThrowHttpError(error?.ToString(), response, memberName);
     }
 
