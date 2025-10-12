@@ -2,14 +2,14 @@
 _layout: landing
 ---
 
-## JenkinsWebApi 
+## GraphWebApi 
 
-JenkinsWebApi is a .NET API for the Jenkins web service.	
+GraphWebApi is a .NET API for the Graph web service.	
 		
 ### Getting Started
 
 
-To get started, add the JenkinsWebApi package to your project.
+To get started, add the GraphWebApi package to your project.
 
 
 
