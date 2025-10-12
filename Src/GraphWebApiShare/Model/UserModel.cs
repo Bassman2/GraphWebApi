@@ -1,4 +1,4 @@
-﻿namespace GraphWebApi.Service.Model;
+﻿namespace GraphWebApi.Model;
 
 public class UserModel
 {
