@@ -4,6 +4,7 @@
   </Folder>
   <Folder Name="/Src/">
     <Project Path="../WebServiceClient/Src/WebServiceClientShare/WebServiceClientShare.shproj" />
+    <Project Path="Src/GraphWebApi100/GraphWebApi100.csproj" />
     <Project Path="Src/GraphWebApi80/GraphWebApi80.csproj" />
     <Project Path="Src/GraphWebApi90/GraphWebApi90.csproj" />
     <Project Path="Src/GraphWebApiShare/GraphWebApiShare.shproj" />

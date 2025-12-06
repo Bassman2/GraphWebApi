@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>GraphWebApi</AssemblyName>
@@ -19,8 +19,8 @@
     <IsAotCompatible>True</IsAotCompatible>
   </PropertyGroup>
 
-  <Import Project="..\GraphWebApiShare\GraphWebApiShare.projitems" Label="Shared" />
-
   <Import Project="..\..\..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems" Label="Shared" />
+
+  <Import Project="..\GraphWebApiShare\GraphWebApiShare.projitems" Label="Shared" />
 
 </Project>
