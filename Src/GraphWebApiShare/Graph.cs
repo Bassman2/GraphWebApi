@@ -10,6 +10,18 @@ public sealed class Graph : JsonService
 
     protected override string? AuthenticationTestUrl => "/v1.0/me";
 
+    /// <summary>
+    /// Configures the provided <see cref="HttpClient"/> instance with specific default headers required for API requests.
+    /// This includes setting the User-Agent, Accept, and API version headers.
+    /// </summary>
+    /// <param name="client">The <see cref="HttpClient"/> to configure for GitHub API usage.</param>
+    /// <param name="appName">The name of the application, used as the User-Agent header value.</param>
+    protected override void InitializeClient(HttpClient client, string appName)
+    {
+        client.DefaultRequestHeaders.Add("User-Agent", appName);
+        client.DefaultRequestHeaders.Add("Accept", "application/json");
+    }
+
     #region error handling
 
     protected override async Task ErrorHandlingAsync(HttpResponseMessage response, string memberName, CancellationToken cancellationToken)
